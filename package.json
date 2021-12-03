@@ -1,7 +1,7 @@
 {
-  "name": "me-vue-ui",
+  "name": "@chamberlain/vue-ui",
   "version": "1.0.0",
-  "description": "",
+  "description": "Create a personal component library",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -53,6 +53,20 @@
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.2"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "chenchucheng",
+  "license": "ISC",
+  "directories": {
+    "doc": "docs",
+    "example": "examples",
+    "lib": "lib",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chamberlain99/cd-ui-github.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Chamberlain99/cd-ui-github/issues"
+  },
+  "homepage": "https://github.com/Chamberlain99/cd-ui-github#readme"
 }
