@@ -4,7 +4,8 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
-import CdUI from '../src/index'
+// import CdUI from '../src/index'
+import CdUI from '../lib/me-vue-ui.common'
 import demoBlock from './components/demo-block'
 import hljs from 'highlight.js'
 
