@@ -12,9 +12,13 @@ docs/
 # 忽略指定文件 
 .eslintignore
 .prettierignore        
+.browserslistrc
 .eslintrc.js
 .prettierrc.js 
 babel.config.json 
+.env
+.env.*
+*.js 
 
 *.map
 
