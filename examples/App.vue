@@ -1,10 +1,10 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> | <router-link to="/jsx">JSX</router-link> |
-      <router-link to="/test">loading组件</router-link>
+    <main-header></main-header>
+    <div class="main_container">
+      <router-view></router-view>
     </div>
-    <router-view />
+    <main-footer></main-footer>
   </div>
 </template>
 
@@ -34,5 +34,11 @@ a {
 }
 .router-link-exact-active {
   color: #42b983;
+}
+.main_container {
+  height: 100vh;
+  margin: 0 auto;
+  width: 1500px;
+  background-color: #8877;
 }
 </style>

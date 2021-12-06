@@ -12,7 +12,8 @@
     "dev": "cross-env NODE_ENV=development webpack-dev-server --config build/webpack.config.js"
   },
   "dependencies": {
-    "babel-helper-vue-jsx-merge-props": "^2.0.3"
+    "babel-helper-vue-jsx-merge-props": "^2.0.3",
+    "element-ui": "^2.15.6"
   },
   "peerDependencies": {
     "vue": "^2.6.12"
@@ -42,6 +43,8 @@
     "markdown-it-container": "^3.0.0",
     "prettier": "2.4.1",
     "progress-bar-webpack-plugin": "^2.1.0",
+    "sass": "^1.44.0",
+    "sass-loader": "^12.3.0",
     "style-loader": "^2.0.0",
     "transliteration": "^2.2.0",
     "url-loader": "^4.1.1",
@@ -49,7 +52,7 @@
     "vue-loader": "^15.9.6",
     "vue-router": "^3.5.3",
     "vue-template-compiler": "^2.6.12",
-    "webpack": "^5.32.0",
+    "webpack": "^5.64.4",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.2"
   },
@@ -61,6 +64,12 @@
     "lib": "lib",
     "test": "test"
   },
+  "keywords": [
+    "vue",
+    "components",
+    "codemirror",
+    "code editor"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Chamberlain99/cd-ui-github.git"
