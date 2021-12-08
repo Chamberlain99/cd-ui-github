@@ -25,7 +25,7 @@
 
 <script>
 export default {
-  name: 'CdLoading',
+  name: 'MeLoading',
   props: {
     loadingText: {
       type: String,
