@@ -5,7 +5,7 @@
       <div class="link">
         <div class="linkBox_title"><span class="greenBox"></span>链接</div>
         <ul class="uls">
-          <li class="github_link">代码仓库</li>
+          <li class="github_link" @click="openGithub">代码仓库</li>
           <li class="update_log">更新日志</li>
         </ul>
       </div>
@@ -21,6 +21,11 @@ export default {
   name: 'mainFooter',
   data() {
     return {}
+  },
+  methods: {
+    openGithub() {
+      window.open('https://github.com/Chamberlain99')
+    },
   },
 }
 </script>
