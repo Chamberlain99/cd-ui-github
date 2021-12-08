@@ -98,6 +98,9 @@ export default {
             // transform: scale(1.2);
           }
         }
+        .github_link {
+          color: red;
+        }
       }
     }
   }
