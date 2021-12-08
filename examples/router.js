@@ -9,6 +9,11 @@ const routes = [
     name: 'index',
     component: (resolve) => require(['./components/HelloWorld.vue'], resolve), //使用vue的异步组件技术 , 可以实现按需加载 .
   },
+  {
+    path: '/component',
+    name: 'component',
+    component: (resolve) => require(['./docs/button.md'], resolve), //使用vue的异步组件技术 , 可以实现按需加载 .
+  },
 ]
 
 routes.push({
@@ -17,12 +22,12 @@ routes.push({
   component: (resolve) => require(['./docs/loading.md'], resolve),
 })
 
-routes.push({
-  path: '/jsx',
-  name: 'jsx',
-  component: (resolve) => require(['./components/JSX.vue'], resolve),
-  // component: () => import('./components/JSX.vue'),
-})
+// routes.push({
+//   path: '/jsx',
+//   name: 'jsx',
+//   component: (resolve) => require(['./components/JSX.vue'], resolve),
+//   // component: () => import('./components/JSX.vue'),
+// })
 
 export default new VueRouter({
   mode: 'hash',

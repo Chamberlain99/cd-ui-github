@@ -1,15 +1,15 @@
 <template>
   <div class="header_container">
-    <div class="titleLeft">
+    <div class="titleLeft" @click="logoClick">
       <div class="el-icon-s-promotion" style="font-size: 30px; padding-left: 13px"></div>
       <div class="webName">ui-view</div>
     </div>
     <div class="routerList">
-      <span class="list">首页指南</span>
-      <span class="list">组件</span>
-      <span class="list">首页</span>
-      <span class="list">关于</span>
-      <!-- <i class="el-icon-s-promotion"></i> -->
+      <template v-for="(item, index) in titleList">
+        <router-link class="list" :key="index" :to="item.title" @click="titleClick(index)" :class="[index == currentIndex ? 'active' : '']">{{
+          item.name
+        }}</router-link>
+      </template>
     </div>
   </div>
 </template>
@@ -18,7 +18,22 @@
 export default {
   name: 'mainHeader',
   data() {
-    return {}
+    return {
+      titleList: [
+        { name: '设计规范', title: 'design' },
+        { name: '组件', title: 'test' },
+        { name: '关于', title: 'about' },
+      ],
+      currentIndex: -1,
+    }
+  },
+  methods: {
+    titleClick(index) {
+      this.currentIndex = index
+    },
+    logoClick() {
+      this.$router.push('/')
+    },
   },
 }
 </script>
@@ -35,15 +50,13 @@ export default {
   align-items: center;
   justify-content: space-between;
   .titleLeft {
+    cursor: pointer;
     width: 200px;
-    // height: inherit;
     height: 60px;
-
     .webIcon {
       width: 140px;
       height: 50px;
       margin-left: 20px;
-      // background-color: #77ff;
       font-size: 40px;
     }
     .webName {
@@ -53,17 +66,22 @@ export default {
       display: inline-block;
     }
   }
-
   .routerList {
     width: 500px;
     height: inherit;
     cursor: pointer;
     .list {
       padding: 0 13px;
+      color: #fff;
       &:hover {
         color: #c7ad8f;
+        // text-decoration: underline;
         // border: 1px solid #e4e4e4;
       }
+    }
+    .active {
+      text-decoration: underline;
+      color: #c7ad8f;
     }
   }
 }
