@@ -4,7 +4,7 @@
     <div class="homepage_title">面向个人开发者vue-UI组件库</div>
     <div class="navBox">
       <div class="navBox1" @click="startUse">开始使用</div>
-      <div class="navBox2">设计体系1</div>
+      <div class="navBox2">设计体系2</div>
     </div>
   </div>
 </template>
